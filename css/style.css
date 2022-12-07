@@ -185,6 +185,16 @@ footer img {
 		float: none;
 		
 	}
+	.showcase #right {
+		float: none;
+		padding: 0px;
+	}
+
+@media screen and (max-width: 360px) {	
+	.showcase img {
+		width: 95%;
+	}
+
 }
 
 
