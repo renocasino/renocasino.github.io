@@ -185,16 +185,6 @@ footer img {
 		float: none;
 		
 	}
-	.showcase #right {
-		float: none;
-		padding: 0px;
-	}
-
-@media screen and (max-width: 360px) {	
-	.showcase img {
-		width: 95%;
-	}
-
 }
 
 
@@ -254,18 +244,4 @@ footer img {
 /*****************************************************************************************************/
 /****************************************** Dilac 3042 Page ******************************************/
 /*****************************************************************************************************/
-
-.dilacPoster img { 
-	max-width:  400px;
-	display:block; 
-	margin:0 auto;
-	padding:15px; 
-	height: auto }
-
-
-@media only screen and (max-width: 700px) {
-	.dilacPoster img {width: 70%;}
-
-
-}
 
