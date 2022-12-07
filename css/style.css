@@ -177,6 +177,16 @@ footer img {
 	float: left;
 }
 
+@media screen and (max-width: 700px) {
+	.showcase {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		float: none;
+		
+	}
+}
+
 
 
 
@@ -184,9 +194,19 @@ footer img {
 /******************************************** Shows Page *********************************************/
 /*****************************************************************************************************/
 
-.concertPosters img { display:block; margin:0 auto; padding:15px }
+.concertPosters img { 
+	width:  400px;
+	display:block; 
+	margin:0 auto;
+	padding:15px; 
+	height: auto }
 
 
+@media only screen and (max-width: 700px) {
+	.concertPosters img {width: 70%;}
+
+
+}
 
 
 
@@ -195,7 +215,10 @@ footer img {
 /******************************************** Media Page *********************************************/
 /*****************************************************************************************************/
 
-.bandPhotos img { display:block; margin:0 auto; padding:15px }
+.bandPhotos img { 
+	display:block; 
+	margin:0 auto; 
+	padding:15px }
 
 
 
