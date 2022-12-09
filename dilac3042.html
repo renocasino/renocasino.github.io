@@ -25,10 +25,134 @@
 	<br>
 	<br>
 	<br>
-	<div class="dilacPoster">
-		<img src="img/dilac3042/dilac-new-years-eve.jpeg" width="400">
+	<div class="showcase">
+
+		<div id="content">
+			<br>
+			<br>
+			<p>
+				oakland based reno casino formed amid pandemic induced separation. with a core of four members and a rotating collection of guest musicians, the group aims to capture the diverse, plaintive landscapes of northern california with their timbre-centered instrumental rock. the band's collages of interweaving, minimalist guitar draw inspiration from the fearless experimentation that dominated the underground music scenes of the late 90's, including the work of bay area groups tarentel and red house painters 
+			</p>
+			<p>
+				the group paints sonic landscapes with a broad instrumental palette, combining the talents of fellow bay area musicians to incorporate strings, horns, and miscellaneous percussion. 
+			</p>
+			<p>
+				obsessed with crafting a lyricless journey through space, the group's muse is that dark highway winding out of town through silhouettes of oak trees and industrial detritus.
+			</p>
+
+		</div>	
+		<div id="right">
+			<img src="img/dilac3042/dilac-new-years-eve.jpeg" width="550">
+		</div>
 	</div>
-	
+
+
+	<div style="text-align: center">
+		<p>37.8211607238°, -122.2574082093°</p>
+	</div>
+	<br>
+	<div>
+	<div class="dilac-slideshow-container">
+		<div class="show1">
+	    	<img src="img/dilac3042/dilac0.jpeg" style="width:100%">
+	  	</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac1.jpeg" style="width: 50%">
+			</div>
+  		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac01.jpeg" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<img src="img/dilac3042/dilac2.jpeg" style="width:100%">
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac3.jpeg" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<img src="img/dilac3042/dilac5.jpeg" style="width:100%">
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac6.jpeg" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<img src="img/dilac3042/dilac7.jpeg" style="width:100%">
+		</div>
+
+		<div class="show1">
+			<img src="img/dilac3042/dilac8.jpeg" style="width:100%">
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac9.jpeg" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac10.JPG" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac11.JPG" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac12.JPG" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac13.JPG" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac14.JPG" style="width:50%">
+			</div>
+		</div>
+
+		<div class="show1">
+			<div  style="text-align: center;">
+				<img src="img/dilac3042/dilac15.JPG" style="width:50%">
+			</div>
+		</div>
+
+
+	  	<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+	  	<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+	</div>
+	<div style="text-align: center">
+		<p>photos...</p>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
 
 
 
@@ -36,7 +160,8 @@
 	<footer>
 		<img src="img/footer/footer.jpg">
 	</footer>
-	<script>	
+
+	<script>
 		function myFunction() {
   			var x = document.getElementById("myTopnav");
   			if (x.className === "topnav") {
@@ -44,6 +169,30 @@
   			} else {
     			x.className = "topnav";
   			}
+		}
+
+
+
+		/* Slideshow Scripts */
+		let slideIndex = [1,1,1];
+		let slideId = ["show1", "show2", "show3"]
+		showSlides(1, 0);
+		showSlides(1, 1);
+		showSlides(1, 2);
+
+		function plusSlides(n, no) {
+		  showSlides(slideIndex[no] += n, no);
+		}
+
+		function showSlides(n, no) {
+		  let i;
+		  let x = document.getElementsByClassName(slideId[no]);
+		  if (n > x.length) {slideIndex[no] = 1}    
+		  if (n < 1) {slideIndex[no] = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex[no]-1].style.display = "block";  
 		}
 	</script>
 </body>
