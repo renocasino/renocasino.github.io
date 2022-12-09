@@ -308,7 +308,38 @@ footer img {
 /*****************************************************************************************************/
 
 
+.dilacShowcase {
+	display: flex;
+	padding: 30px 30px 30px 30px;
+	float:  left;
+} 
+.dilacShowcase #dilacRight {
+	float: left;
+	
+	padding: 30px 30px 30px 30px;
+}
 
+/*.dilacShowcase p {
+	float: left;
+}
+*/
+@media screen and (max-width: 850px) {
+	.dilacShowcase {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		float: none;
+		
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.dilacShowcase img {
+		width:  95%;	
+	}
+}
+
+/*
 .dilacShowcase {
 	display: flex;
 	padding: 30px 30px 30px 30px;
@@ -339,7 +370,10 @@ footer img {
 	.showcase img {
 		width:  95%;	
 	}
-}
+}*/
+
+
+
 
 .dilac-slideshow-container img {vertical-align: middle;}
 
