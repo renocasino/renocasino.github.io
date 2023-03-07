@@ -5,8 +5,8 @@
 
 	navbar
 	 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-	|		home		shows			media			contact			dilac 3042																								|
-	|																																																			|
+	|		home		shows			media			contact			dilac 3042						|
+	|																									|
 	 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
@@ -170,9 +170,11 @@ footer img {
 /*****************************************************************************************************/
 
 .showcase {
+	margin: auto;
+	/* width: 50%; */
 	display: flex;
 	padding: 30px 30px 30px 30px;
-	float:  left;
+	float: center;
 } 
 .showcase #right {
 	float: left;
