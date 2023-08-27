@@ -211,16 +211,18 @@ footer img {
 
 .concertPosters img { 
 	width:  400px;
-	display:block; 
+/*	display:block; */
 	margin:0 auto;
 	padding:15px; 
-	height: auto }
+	height: auto 
+}
 
+.concertPosters {
+	text-align: center
+}
 
 @media only screen and (max-width: 560px) {
 	.concertPosters img {width: 90%;}
-
-
 }
 
 
